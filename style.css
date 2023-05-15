@@ -51,12 +51,26 @@ textarea {
     resize: none;
 }
 
-.mensagem-input {
+.input-texto {
 	font-size: 2em;
     margin-top: 20px;
     background-color: transparent;
     border-radius: 30px;
     padding: 0.5rem;
+}
+
+.informacao {
+    margin-left: 15px;
+}
+.mensagens-erro li::before {
+    content: url(exclamation.png);
+    width: 16px;
+    height: 17px;
+    vertical-align: middle;
+}
+.mensagens-erro li {
+    font-size: 20px;
+    margin-left: 25px;
 }
 
 button {
@@ -76,19 +90,21 @@ button:hover {
     opacity: 80%;
 }
 
-.button-codificar {
+.btn-codificar {
     background-color: #0a3871;
     color: white;
 }
 
-.button-decodificar {
+.btn-decodificar {
     margin-left: 30px;
     background-color: #d8dfe8;
     color: #0a3871;
 }
 
-section {
-    text-align: center;
+.buttons {
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .container {
@@ -101,21 +117,29 @@ section {
     box-shadow: 12px 18px 35px #356ea9;
 }
 
-.resultado-input {
+.resultado {
 	font-size: 2em;
-	text-align: center;
     background-color: transparent;
     border-radius: 30px;
     margin-bottom: 15px;
     border-color: transparent;
 }
 
-.resultado-input:placeholder-shown {
+.resultado:placeholder-shown {
     background-image: url(resultado.png);
     background-position: top;
+    background-repeat: no-repeat;
 }
 
-.button-copiar {
+.resultado:not(:placeholder-shown) {
+    background-color: white;
+}
+
+.invisivel {
+    display: none;
+}
+
+.btn-copiar {
 	text-align: center;
 	background-color: white;
     color: #0a3871;
@@ -163,35 +187,41 @@ div a img:hover {
         font-size: 30px;
     }
 
-    .mensagem-input {
+    .input-texto {
         font-size: 20px;
         width: 300px;
         height: 250px;
+        margin-top: 0px;
     }
 
     button {
         width: 200px;
         height: 35px;
         font-size: 20px;
-         width: 250px;
-        
+        width: 250px;   
     }
 
-    .button-decodificar {
+    .buttons {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .btn-decodificar {
         margin-left: 0px;
     }
 
     .container {
         width: 300px;
         height: 500px;
+        margin-top: 20px;
     }
 
-    .resultado-input {
+    .resultado {
         width: 300px;
         height: 400px;
     }
 
-    .resultado-input:placeholder-shown {
+    .resultado:placeholder-shown {
     background-image: url(resultado-media.png);
 
 }
