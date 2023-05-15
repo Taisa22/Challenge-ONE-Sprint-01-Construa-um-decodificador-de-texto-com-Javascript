@@ -27,23 +27,25 @@
 			<h1>Codificador e Decodificador de texto</h1>
 
 	<main>
-		<textarea class="mensagem-input" cols="60" rows="12" placeholder="Digite seu texto..."></textarea>
+		<section>
+			<textarea class="input-texto" cols="60" rows="12" placeholder="Digite seu texto..."></textarea>
 
-		<div>
-            <ul class="mensagem-erro"></ul><p><ion-icon name="warning-outline"></ion-icon> Apenas letras minúsculas e sem acento!</p>
-        </div>
+			<div class="informacao">
+            	<ul class="mensagens-erro"></ul>
+        	</div>
 
-        <div class="buttons">
-            <button type="button" class="button-codificar">Codificar</button>
+        	<div class="buttons">
+            	<button type="button" class="btn-codificar">Codificar</button>
 
-            <button type="button" class="button-decodificar">Decodificar</button>
-        </div>
+            	<button type="button" class="btn-decodificar">Decodificar</button>
+        	</div>
+        </section>
        
 
         <section class="container">
-            <textarea class="resultado-input" cols="50" rows="10" placeholder=" "  readonly></textarea>
+            <textarea class="resultado" cols="50" rows="10" placeholder=" "  readonly></textarea>
 
-            <button type="button" class=" button-copiar">Copiar</button>
+            <button type="button" class=" invisivel btn-copiar">Copiar</button>
         </section>
 
     </main>
@@ -62,9 +64,15 @@
 			</div>
 		</nav>
 	</footer>
+	
+	<script src="codificar.js"></script>
+	<script src="copiar.js"></script>
+	<script src="processar.js"></script>
 
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
 	<script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
 	</body>
 </html>
