@@ -33,7 +33,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-h1 {
+.titulo-principal {
 	text-align: center;
 	font-size: 3em;
 	font-weight: bold;
@@ -146,7 +146,7 @@ button:hover {
 }
 
 footer {
-   width: 100%;
+    width: 100%;
     height: 300px;
     text-align: center;
     position: relative;
@@ -170,12 +170,60 @@ div a img:hover {
     color: #FFFFFF;
     font-size: 13px;
     margin-top: 40px;
+
 }
 
 .copyright img {
     height: 100px;
     width: 64px;
     margin-bottom: 15px;
+}
+
+.titulo-segundo {
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+main p {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.link {
+    color: #000000;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #0000FF;
+}
+
+.titulo-terceiro {
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.referencia {
+    font-weight: bold;
+}
+
+.wikipedia {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {
@@ -224,7 +272,26 @@ div a img:hover {
     .resultado:placeholder-shown {
     background-image: url(resultado-media.png);
 
-}
+    }
+
+    .titulo-segundo {
+    font-size: 18px;
+    }
+
+    h2 {
+    font-size: 12px;
+    }
+
+    main p {
+    font-size: 12px;
+    } 
+
+    .titulo-terceiro {
+    font-size: 18px;
+
+    }
+
+
 
 
 
